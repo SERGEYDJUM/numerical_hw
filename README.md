@@ -1,5 +1,7 @@
 # numerical_hw
 *By Джумагельдиев Сергей from БПМ-21-2*
+## Task #4
+![image](https://github.com/SERGEYDJUM/numerical_hw/assets/39106181/1cb79055-dc23-45df-9925-9c9d2591e4cb)
 
 ## Task #3
 - Выбор ведущего элемента по столбцу встроен в 1.1 и 1.2
