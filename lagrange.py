@@ -49,7 +49,7 @@ def cubic_lagrange(XY: Matrix, arr: Vector) -> Vector:
         x_3, y_3 = XY[binned[i]]
         l1, l2 = None, None
 
-        if binned[i] - 2 > 0:
+        if binned[i] - 2 >= 0:
             x_1, y_1 = XY[binned[i] - 2]
             p_11, p_12, p_13 = lagrange_cubic_coeff(arr[i], x_1, x_2, x_3)
             l1 = p_11 * y_1 + p_12 * y_2 + p_13 * y_3
@@ -68,12 +68,12 @@ def cubic_lagrange(XY: Matrix, arr: Vector) -> Vector:
 
 
 if __name__ == "__main__":
-    dots = np.array([(1, 4), (1.5, -2), (2.5, 0), (4.5, -3)])
+    dots = np.array([(1, 4), (1.5, -6), (2.5, 0), (4.5, -3)])
     poly = global_lagrange(dots)
     print(f"[Global] {poly}")
-    
+
     lb, rb = 1, 4.5
-    
+
     x_lin = np.linspace(lb, rb, 100)
     poly_y = poly.linspace(n=100, domain=[lb, rb])
 
