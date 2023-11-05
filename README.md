@@ -4,7 +4,7 @@
 ## Task #5
 ![image](https://github.com/SERGEYDJUM/numerical_hw/assets/39106181/a99d2e17-9552-4bd8-9ca6-6302e4a32c3e)
 
-![image](https://github.com/SERGEYDJUM/numerical_hw/assets/39106181/324a6bc7-5eef-4a9b-bee4-da7106bef8d0)
+![image](https://github.com/SERGEYDJUM/numerical_hw/assets/39106181/ebed3c13-49d6-4c06-ac4d-ac760649454f)
 
 ## Task #4
 ![image](https://github.com/SERGEYDJUM/numerical_hw/assets/39106181/1cb79055-dc23-45df-9925-9c9d2591e4cb)
