@@ -32,7 +32,7 @@ def linear_lagrange(XY: Matrix, arr: Vector) -> Vector:
     return np.array(inferred, dtype=np.float_)
 
 
-def lagrange_cubic_coeff(x, l, m, r) -> (float, float, float):
+def lagrange_parabolic_coeff(x, l, m, r) -> (float, float, float):
     p_1 = (x - m) * (x - r) / ((l - m) * (l - r))
     p_2 = (x - l) * (x - r) / ((m - l) * (m - r))
     p_3 = (x - l) * (x - m) / ((r - l) * (r - m))
@@ -40,7 +40,7 @@ def lagrange_cubic_coeff(x, l, m, r) -> (float, float, float):
     return (p_1, p_2, p_3)
 
 
-def cubic_lagrange(XY: Matrix, arr: Vector) -> Vector:
+def parabolic_lagrange(XY: Matrix, arr: Vector) -> Vector:
     XY = XY[XY[:, 0].argsort()]
     binned = np.digitize(arr, XY[:, 0], True)
     inferred = []
@@ -51,13 +51,13 @@ def cubic_lagrange(XY: Matrix, arr: Vector) -> Vector:
 
         if binned[i] - 2 >= 0:
             x_1, y_1 = XY[binned[i] - 2]
-            p_11, p_12, p_13 = lagrange_cubic_coeff(arr[i], x_1, x_2, x_3)
+            p_11, p_12, p_13 = lagrange_parabolic_coeff(arr[i], x_1, x_2, x_3)
             l1 = p_11 * y_1 + p_12 * y_2 + p_13 * y_3
             l2 = l1
 
         if binned[i] + 1 < XY.shape[0]:
             x_4, y_4 = XY[binned[i] + 1]
-            p_22, p_23, p_24 = lagrange_cubic_coeff(arr[i], x_2, x_3, x_4)
+            p_22, p_23, p_24 = lagrange_parabolic_coeff(arr[i], x_2, x_3, x_4)
             l2 = p_22 * y_2 + p_23 * y_3 + p_24 * y_4
             if not l1:
                 l1 = l2
@@ -80,7 +80,7 @@ if __name__ == "__main__":
     plt.scatter(dots[:, 0], dots[:, 1], label="Data", color="black")
     plt.plot(poly_y[0], poly_y[1], label="Global")
     plt.plot(x_lin, linear_lagrange(dots, x_lin), label="Linear")
-    plt.plot(x_lin, cubic_lagrange(dots, x_lin), label="Cubic")
+    plt.plot(x_lin, parabolic_lagrange(dots, x_lin), label="Parabolic")
     plt.grid()
     plt.legend()
     plt.show()
