@@ -2,9 +2,9 @@
 *By Джумагельдиев Сергей from БПМ-21-2*
 
 ## Task #5
-![image](https://github.com/SERGEYDJUM/numerical_hw/assets/39106181/d83d4b12-e627-4db1-9110-e8b31a876a0b)
+![image](https://github.com/SERGEYDJUM/numerical_hw/assets/39106181/a99d2e17-9552-4bd8-9ca6-6302e4a32c3e)
 
-![image](https://github.com/SERGEYDJUM/numerical_hw/assets/39106181/4f0b1408-2673-420e-8ad5-0c1600197836)
+![image](https://github.com/SERGEYDJUM/numerical_hw/assets/39106181/324a6bc7-5eef-4a9b-bee4-da7106bef8d0)
 
 ## Task #4
 ![image](https://github.com/SERGEYDJUM/numerical_hw/assets/39106181/1cb79055-dc23-45df-9925-9c9d2591e4cb)
