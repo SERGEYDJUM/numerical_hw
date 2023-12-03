@@ -1,6 +1,12 @@
 # numerical_hw
 *By Джумагельдиев Сергей from БПМ-21-2*
 
+## Task #6
+![image](https://github.com/SERGEYDJUM/numerical_hw/assets/39106181/520157cc-5cb9-4087-8166-16cba4819ca3)
+
+![image](https://github.com/SERGEYDJUM/numerical_hw/assets/39106181/6f860baa-66fc-442c-b443-32af81285a55)
+
+
 ## Task #5
 ![image](https://github.com/SERGEYDJUM/numerical_hw/assets/39106181/a99d2e17-9552-4bd8-9ca6-6302e4a32c3e)
 
